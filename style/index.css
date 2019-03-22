@@ -1,0 +1,21 @@
+body, html, main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#flashSection div{
+
+    border: 2px black solid;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+
+
+}
