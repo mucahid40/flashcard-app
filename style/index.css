@@ -36,3 +36,19 @@ body, html, main {
     height: 40px;
     color: white;
 }
+
+#edit {
+
+    position: absolute;
+    /* display: flex;
+    justify-self: center;
+    justify-content: center; */
+    top: 30px;
+    left: 20px;
+    background: linear-gradient(340deg, #1100d6, #1b0096);
+    border: transparent;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
