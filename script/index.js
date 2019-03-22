@@ -74,5 +74,5 @@ function reset() {
     getRandomValue(wordDictionary)
     let nextWordSet = getRandomValue(wordDictionary);
     console.log(nextWordSet[0], nextWordSet[1]);
-    currentH1.innerHTML = nextWordSet[language];
+    word.innerHTML = nextWordSet[language];
 }
