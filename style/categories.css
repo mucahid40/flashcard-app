@@ -49,3 +49,14 @@ div {
     /* margin: 10 rem; */
 }
 
+#back {
+position: absolute;
+top: 90px;
+left: 30px;
+background: linear-gradient(340deg, #1100d6, #1b0096);
+border: transparent;
+border-radius: 3px;
+width: 100px;
+height: 40px;
+color: white;
+}
