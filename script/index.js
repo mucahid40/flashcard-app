@@ -26,6 +26,7 @@ let word = document.getElementById('content');
 word.innerHTML = getRandomValue(wordDictionary)[language];
 word.style.color = 'black';
 
+
 // Switch between Spanish and English
 function switchLanguage(){
     let word = document.getElementById('content');
@@ -42,9 +43,21 @@ function switchLanguage(){
     }
 }
 
+// let lang = document.getElementById('language');
+// console.log(lang);
+// lang.innerHTML = 'spanish';
+// console.log(lang);
+
+// function switchLangName () {
+//     let lang = document.getElementById('language');
+//     console.log(lang);
+// }
+
 
 function action() {
     switchLanguage();
+    
+    // switchLangName(switchLanguage());
 }
 
 // reset/next word
