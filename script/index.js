@@ -65,4 +65,6 @@ function reset() {
     let nextWordSet = getRandomValue(wordDictionary);
     console.log(nextWordSet[0], nextWordSet[1]);
     word.innerHTML = nextWordSet[0];
+    word.style.color = 'black';
+    language = 0;
 }
