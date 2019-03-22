@@ -30,6 +30,8 @@ let language = 0;
 let currentH1 = document.getElementById('content');
 currentH1.innerHTML = wordSet[language];
 
+
+
 function myFunc() {
     // if color is red
     if (document.getElementById('content').style.color === 'red') {
