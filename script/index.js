@@ -16,10 +16,11 @@ function getRandomValue(list){
     let max = (Math.floor(list.length));
     let randomValue = Math.floor(Math.random() * max + min);
     let wordSet = list[randomValue];
-    return wordSet[0];
+    return wordSet;
     console.log(wordSet)
 }
 
+console.log(getRandomValue(wordDictionary))
 // Assign starting value
 // let wordSet = getRandomValue(wordDictionary);
 // console.log(wordSet);
@@ -29,7 +30,7 @@ function getRandomValue(list){
 
 let language = 0;
 let word = document.getElementById('content');
-word.innerHTML = getRandomValue(wordDictionary);
+word.innerHTML = getRandomValue(wordDictionary)[language];
 word.style.color = 'black';
 
 // Switch between Spanish and English
@@ -68,7 +69,6 @@ function setColor() {
 
 
 function action() {
-    
     switchLanguage();
 }
 
