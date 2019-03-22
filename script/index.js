@@ -72,6 +72,7 @@ function action() {
     switchLanguage();
 }
 
+// reset/next word
 function reset() {
     let nextWordSet = getRandomValue(wordDictionary);
     console.log(nextWordSet[0], nextWordSet[1]);
