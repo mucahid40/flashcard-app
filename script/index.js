@@ -20,35 +20,51 @@ function getRandomValue(list){
 }
 
 let wordSet = getRandomValue(wordDictionary);
-console.log(wordSet[0], wordSet[1]);
+console.log(wordSet);
 
 // Change the h1 tag value
 // Fetch current h1
 
-// 0 = Spanish, 1 = English
 let language = 0;
-let currentH1 = document.getElementById('content');
-currentH1.innerHTML = wordSet[language];
+let word = document.getElementById('content');
+word.innerHTML = wordSet[0];
+word.style.color = 'black';
 
+// Switch between Spanish and English
+function switchLanguage(){
+    let word = document.getElementById('content');
+    if(language === 0){
+        language = 1;
+        word.innerHTML = wordSet[1];
+        return language;
+    } else if (language === 1){
+        language = 0;
+        word.innerHTML = wordSet[0];
+        return language;
+    }
+}
 
-
-function myFunc() {
+function setColor() {
+    let h1 = document.getElementById('content');
     // if color is red
-    if (document.getElementById('content').style.color === 'red') {
+    if (h1.style.color === 'red') {
         // get element by id and change color
-        document.getElementById('content').style.color = 'black';
+        h1.style.color = 'black';
 
         //log what code i used
-        console.log("document.getElementById('content').style.color = 'black'");
-    }
+        console.log("h1.style.color = 'black'");
 
-    else {
+    } else {
 
     //get element by id and change color
-    document.getElementById('content').style.color = 'red';
+    h1.style.color = 'red';
 
     //log what code i used
-    console.log("document.getElementById('content').style.color = 'red'");
+    console.log("h1.style.color = 'red'");
     }
 
+}
+
+function action() {
+    switchLanguage();
 }
