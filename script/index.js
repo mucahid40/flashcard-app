@@ -17,17 +17,10 @@ function getRandomValue(list){
     let randomValue = Math.floor(Math.random() * max + min);
     wordSet = list[randomValue];
     return wordSet;
-    console.log(wordSet)
 }
 
-console.log(getRandomValue(wordDictionary))
-// Assign starting value
-    wordSet = getRandomValue(wordDictionary);
-// console.log(wordSet);
-
-// Change the h1 tag value
-// Fetch current h1
-
+// Assign starting value, language and color
+wordSet = getRandomValue(wordDictionary);
 let language = 0;
 let word = document.getElementById('content');
 word.innerHTML = getRandomValue(wordDictionary)[language];
@@ -39,31 +32,13 @@ function switchLanguage(){
     if(language === 0){
         language = 1;
         word.innerHTML = wordSet[1];
+        word.style.color = 'red';
         return language;
     } else if (language === 1){
         language = 0;
         word.innerHTML = wordSet[0];
+        word.style.color = 'black';
         return language;
-    }
-}
-
-function setColor() {
-    let h1 = document.getElementById('content');
-    // if color is red
-    if (h1.style.color === 'red') {
-        // get element by id and change color
-        h1.style.color = 'black';
-
-        //log what code i used
-        console.log("h1.style.color = 'black'");
-
-    } else {
-
-    //get element by id and change color
-    h1.style.color = 'red';
-
-    //log what code i used
-    console.log("h1.style.color = 'red'");
     }
 }
 
