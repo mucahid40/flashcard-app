@@ -1,5 +1,6 @@
 body, html, main {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,12 +11,14 @@ body, html, main {
 #flashSection div{
 
     border: 2px black solid;
-    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 10%;
 
+}
 
+#flashSection {
+    width: 80%;
 }
