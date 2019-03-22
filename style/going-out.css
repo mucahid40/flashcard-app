@@ -27,14 +27,16 @@ html {
     flex-direction: column;
  }
  
- #title{
+ /* #title{
  
- }
+ } */
  
  #categories, #catContainer {
     width: 100%;
     height: 100%;
  }
+ 
+ 
  
  div {
     border: 2px black solid;
@@ -46,16 +48,3 @@ html {
     flex-direction: column;
     /* margin: 10 rem; */
  }
-}
-
-#back {
-position: absolute;
-top: 90px;
-left: 30px;
-background: linear-gradient(340deg, #1100d6, #1b0096);
-border: transparent;
-border-radius: 3px;
-width: 100px;
-height: 40px;
-color: white;
-}
