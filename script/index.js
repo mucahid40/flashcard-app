@@ -15,14 +15,14 @@ function getRandomValue(list){
     let min = 0;
     let max = (Math.floor(list.length));
     let randomValue = Math.floor(Math.random() * max + min);
-    let wordSet = list[randomValue];
+    wordSet = list[randomValue];
     return wordSet;
     console.log(wordSet)
 }
 
 console.log(getRandomValue(wordDictionary))
 // Assign starting value
-// let wordSet = getRandomValue(wordDictionary);
+    wordSet = getRandomValue(wordDictionary);
 // console.log(wordSet);
 
 // Change the h1 tag value
@@ -38,11 +38,11 @@ function switchLanguage(){
     let word = document.getElementById('content');
     if(language === 0){
         language = 1;
-        word.innerHTML = word[1];
+        word.innerHTML = wordSet[1];
         return language;
     } else if (language === 1){
         language = 0;
-        word.innerHTML = word[0];
+        word.innerHTML = wordSet[0];
         return language;
     }
 }
