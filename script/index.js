@@ -12,7 +12,7 @@ const wordDictionary = [[['hola'], ['hi']],
 
 // Function to select a random word set from the word dictionary
 function getRandomValue(list){
-    let min = 1;
+    let min = 0;
     let max = (Math.floor(list.length));
     let randomValue = Math.floor(Math.random() * max + min);
     let wordSet = list[randomValue];
